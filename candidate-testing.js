@@ -4,12 +4,12 @@ const input = require('readline-sync');
 // TODO 1.1a: Define candidateName // 
 let candidateName = "" ;
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-let question;
-let correctAnswer;
-let candidateAnswer;
-let questions;
-let correctAnswers;
-let candidateAnswers;
+let question = "What is your name"?;
+let correctAnswer = "";
+let candidateAnswer = "name";
+let questions = "What is your name";
+let correctAnswers = "";
+let candidateAnswers = "name";
 
 
 function askForName() {
