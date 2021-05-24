@@ -12,6 +12,7 @@ let correctAnswers = "";
 let candidateAnswers = "name";
 
 
+
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
 let name = "What is your name?" ;
@@ -37,7 +38,7 @@ console.log("Hello" + name);
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
-  
+  let candidateName = name
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
