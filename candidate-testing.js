@@ -16,7 +16,7 @@ let greeting = "Welcome!";
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
 input.question("What is your name?" + candidateName); {
-  console.log(greeting $[candidateName]);
+  console.log(greeting ${candidateName});
 }
 
 function askQuestion() {
