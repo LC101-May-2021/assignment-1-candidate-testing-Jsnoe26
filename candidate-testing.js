@@ -5,17 +5,18 @@ const input = require('readline-sync');
 let candidateName = "Jade" ;
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question = "What is your name"?;
-let correctAnswer = "";
-let candidateAnswer = "name";
+let correctAnswer = "candidateName";
+let candidateAnswer = "candidateName";
 let questions = "What is your name";
-let correctAnswers = "";
-let candidateAnswers = "name";
-let name = " ";
+let correctAnswers = "candidateName";
+let candidateAnswers = "candidateName";
+let greeting = "Welcome!";
 
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-input.question("What is your name?");
+input.question("What is your name?" + candidateName); {
+  console.log(greeting + candidateName);
 }
 
 function askQuestion() {
