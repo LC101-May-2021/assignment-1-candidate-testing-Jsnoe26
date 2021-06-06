@@ -39,19 +39,19 @@ function gradeQuiz(candidateAnswers) {
 
    let grade;
   for (let i = 0; i >= 6; i++) {
-  if correctAnswers[i] === candidateAnswers[i] {
+  if (correctAnswers[i] === candidateAnswers[i]) {
     finalAnswers.push(true) 
-  } else { 
+  } else {
     finalAnswers.push(false)
   }
-  }
-  }
+  
+  
 
   return grade;
+  
 
+   
 
-   }
-}
 
 
 function runProgram() {
