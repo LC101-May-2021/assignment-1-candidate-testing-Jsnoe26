@@ -11,7 +11,7 @@ let questions = ["Who was the first woman in space? " ,"True or False: 5 kilomet
 let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"] ;
 let candidateAnswers = [];
 let greeting;
-
+let finalAnswers = [];
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
@@ -32,12 +32,20 @@ function askQuestion() {
    gradedQuiz();
 } 
 
+
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-  
+
    let grade;
-  
+  for (let i = 0; i >= 6; i++) {
+  if correctAnswers[i] === candidateAnswers[i] {
+    finalAnswers.push(true) 
+  } else { 
+    finalAnswers.push(false)
+  }
+  }
+  }
 
   return grade;
 
