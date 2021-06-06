@@ -20,7 +20,7 @@ function askForName() {
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-    for(let i = 0; i <= questions.length; i++) {
+    for(let i = 0; i < questions.length; i++) {
       candidateAnswers[i] = input.question(questions[i]);
       if(candidateAnswers[i] === correctAnswers[i]) {
         console.log("Correct!");
@@ -39,6 +39,7 @@ function gradeQuiz(candidateAnswers) {
 
    let grade;
    let counter = 0;
+   let status;
   for (let i = 0; i <= candidateAnswers.length; i++) {
   if (correctAnswers[i] === candidateAnswers[i]) {
     counter++;
@@ -46,7 +47,14 @@ function gradeQuiz(candidateAnswers) {
   }
   
    grade = (counter/correctAnswers.length) * 100;
-   console.log("Overall Grade: " + grade + "( " + counter + " of " + correctAnswers.length + " responses correct!)");
+  if (grade >= 80) {
+    status = "PASSED!";
+  } else {
+    status = "FAILED";
+  }
+  
+   console.log(">>> Overall Grade: " + grade + "( " + counter + " of " + correctAnswers.length + " responses correct!<<<)");
+   console.log(">>> STATUS: " + status + "<<<");
 } 
    
 
