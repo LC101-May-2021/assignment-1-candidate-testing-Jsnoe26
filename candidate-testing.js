@@ -11,7 +11,7 @@ let questions = ["Who was the first woman in space? " ,"True or False: 5 kilomet
 let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"] ;
 let candidateAnswers = [];
 let greeting;
-
+let testing;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
