@@ -7,11 +7,10 @@ let candidateName = "";
 let question = "Who was the first American woman in space? ";
 let correctAnswer = "Sally Ride";
 let candidateAnswer = "";
-let questions = ["Who was the first woman in space? " ,"True or False: 5 kilometer == 5000 meter ? " , "(5 + 3)/2*10 = ?" , "Given the array [8,'Orbit', 'Trajectory', 45], what entry is at index 2? " , "What is the minimum crew size for the ISS? "];
+let questions = ["1. Who was the first woman in space? " ,"2. True or False: 5 kilometer == 5000 meter ? " , "3. (5 + 3)/2*10 = ?" , "4. Given the array [8,'Orbit', 'Trajectory', 45], what entry is at index 2? " , "5. What is the minimum crew size for the ISS? "];
 let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"] ;
 let candidateAnswers = [];
 let greeting;
-let testing;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
@@ -40,6 +39,7 @@ function gradeQuiz(candidateAnswers) {
    let grade;
    let counter = 0;
    let status;
+
   for (let i = 0; i <= candidateAnswers.length; i++) {
   if (correctAnswers[i] === candidateAnswers[i]) {
     counter++;
